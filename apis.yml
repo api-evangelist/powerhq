@@ -1,0 +1,29 @@
+aid: powerhq
+name: PowerHQ
+description: 'PowerHQ is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
+  and added to the network as a stub for full-pipeline profiling.'
+url: https://raw.githubusercontent.com/api-evangelist/powerhq/refs/heads/main/apis.yml
+x-type: company
+x-source: harvest:new-submission
+x-tier: stub
+x-tier-reason: harvest
+specificationVersion: '0.20'
+created: '2026-10-02'
+modified: '2026-10-02'
+tags:
+- Company
+apis: []
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+- FN: APIs.json
+  email: info@apis.io
+common:
+- type: Website
+  url: https://www.powerhq.co
+- type: Documentation
+  url: https://docs.powerhq.co
+x-submission-notes: GraphQL API for U.S. retail energy commerce (plans, enrollment).
+x-submission-probe: root 200; docs 200; llms.txt 200 (both); type reference 200; playground GraphQL POST
+  introspection 200 (queryType Query); 404 probe 404
+x-submitted-by: thad.warren@powerhq.co (apis.io/add, 2026-09-30)
