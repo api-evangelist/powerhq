@@ -1,0 +1,27 @@
+# PowerHQ API
+
+- [Integrate with PowerHQ](https://docs.powerhq.co/index.md): One platform for U.S. retail energy: plans, pricing, enrollment and compliance. Put our Drop-in Storefront on your site, or build your own experience on the PowerHQ API.
+- [Choose your integration](https://docs.powerhq.co/integrations.md): The Drop-in Storefront puts our shopping experience on your site in days. The PowerHQ API lets you build your own. Compare what you build, what you keep, and what each one costs you.
+- [Drop-in Storefront](https://docs.powerhq.co/storefront.md): How the Storefront embed works: the link structure, every parameter, sizing, ZIP pre-loading, partner codes, testing and the three reports you get.
+- [PowerHQ API: Retail Electricity Data for Partners](https://docs.powerhq.co/introduction.md): A single GraphQL API for U.S. retail electricity plans — residential and business pricing, utilities, disclosures, and enrollment for approved partners.
+- [PowerHQ API: Get Started With Your First Query](https://docs.powerhq.co/quickstart.md): Make your first PowerHQ API call in minutes — look up a utility and fetch residential electricity plan pricing from a single GraphQL endpoint.
+- [API Authentication: Keys, Environments, and Errors](https://docs.powerhq.co/authentication.md): Authenticate every PowerHQ API request with your API key: one static secret in the x-api-key header, no OAuth handshake, no token to refresh.
+- [Understanding Advertised vs. All-In Electricity Pricing](https://docs.powerhq.co/concepts/pricing.md): Learn how advertisedPriceUsdPerKwh and allInRateUsdPerKwh differ across Texas and deregulated markets, and which fields to use when building your UI.
+- [Enrollment URLs, Partner Attribution, and Provider Links](https://docs.powerhq.co/concepts/enrollment.md): Understand the two partner-stamped enrollment URLs on every plan and how attribution works so your conversions are tracked back to your account.
+- [Disclosure Documents: EFL, TOS, YRAC, and More by Market](https://docs.powerhq.co/concepts/disclosure-documents.md): Every plan's documents[] array contains required regulatory disclosures. Learn which types appear by market and how to surface them correctly in your UI.
+- [residentialPlans: Fetch Retail Electricity Plans by ZIP](https://docs.powerhq.co/queries/residential-plans.md): Query retail electricity plans for a U.S. residential address by ZIP code or utility ID, with usage-based pricing, provider scores, and enrollment URLs.
+- [residentialEnrollmentUrl: Build a Prefilled Enrollment Link](https://docs.powerhq.co/queries/residential-enrollment-url.md): Generate a residential enrollment link carrying the customer details you already hold — name, contact, service account and usage — so they do not re-enter them at checkout.
+- [businessPlans: Fetch Commercial Electricity Plans by ZIP](https://docs.powerhq.co/queries/business-plans.md): Query commercial electricity plans for a U.S. business location by ZIP code, with usage-based pricing, monthly fees, and partner-stamped enrollment URLs.
+- [businessEnrollmentUrl: Build a Prefilled Commercial Enrollment Link](https://docs.powerhq.co/queries/business-enrollment-url.md): Generate a business enrollment link carrying the details you already hold — business name, signer, contact and annual usage — so they do not re-enter them at checkout.
+- [utilities: Look Up Electric Utilities Serving a ZIP](https://docs.powerhq.co/queries/utilities.md): Retrieve the utility or TDU serving a given ZIP code. Use the returned utility ID to fetch residential plans for that specific utility.
+- [nextStartDate: Get the Earliest Service Start Date](https://docs.powerhq.co/queries/next-start-date.md): Fetch the earliest available electricity service start date for a ZIP code. Supports both move-in and switch scenarios before submitting a plan enrollment.
+- [utilityAccounts: Search Utility Service Accounts by Address](https://docs.powerhq.co/queries/utility-accounts.md): Search existing utility service accounts by street address or account number to verify a customer's service location and account status before enrollment.
+- [energyInfoByState: State Energy Rates and Generation Mix](https://docs.powerhq.co/queries/energy-info-by-state.md): Retrieve the average electricity rate and renewable vs. non-renewable generation mix for any U.S. state, for either residential or business customers.
+- [Public sandbox](https://docs.powerhq.co/playground.md): Run GraphQL queries against live production plans. No API key required.
+- [Using the public sandbox](https://docs.powerhq.co/playground-access.md): What the free public sandbox can run, its limits, and how to call it from code or an AI agent without a key.
+- [PowerHQ API: GraphQL Object Type Reference](https://docs.powerhq.co/reference/types.md): Complete reference for every GraphQL object type, field, and scalar in the PowerHQ API, including nullability rules and field-level notes.
+- [PowerHQ API: GraphQL Enum Values Reference](https://docs.powerhq.co/reference/enums.md): Reference for all GraphQL enums in the PowerHQ API, covering rate types, fee categories, document link types, and utility account statuses.
+- [PowerHQ API: Error Handling and Validation](https://docs.powerhq.co/reference/errors.md): How to handle HTTP errors, GraphQL validation errors, and nullable fields in the PowerHQ API, with a guide to building a resilient integration.
+
+
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.

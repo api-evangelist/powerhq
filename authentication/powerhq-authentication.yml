@@ -1,0 +1,17 @@
+generated: '2026-10-02'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.powerhq.co/authentication.md
+sources:
+- https://docs.powerhq.co/authentication.md
+- https://docs.powerhq.co/quickstart.md
+description: PowerHQ uses a single API key authentication scheme.
+schemes:
+- type: apiKey
+  name: API Key
+  evidence: 'Authenticate every PowerHQ API request with your API key: one static secret in the x-api-key header, no OAuth handshake, no token
+    to refresh.'
+  location: header
+  header: x-api-key
+  how_to_obtain: Contact your partner manager to receive your key.
+docs: https://docs.powerhq.co/authentication.md

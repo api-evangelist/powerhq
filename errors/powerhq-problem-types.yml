@@ -1,0 +1,25 @@
+generated: '2026-10-02'
+method: derived
+generator: derive-problem-types.py
+source:
+- openapi/powerhq-openapi.json
+format: custom
+envelope:
+  media_type: null
+  schema: null
+coverage:
+  operations: 1
+  statuses_declared: 2
+problems:
+- status: 401
+  title: Unauthorized
+  description: Missing or invalid API key.
+  operations: 1
+  media_types: []
+  schema: null
+- status: 403
+  title: Forbidden
+  description: Key is valid but the calling IP is not allow-listed.
+  operations: 1
+  media_types: []
+  schema: null

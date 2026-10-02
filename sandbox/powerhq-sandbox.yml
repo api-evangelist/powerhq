@@ -1,0 +1,15 @@
+generated: '2026-10-02'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.powerhq.co/playground.md
+sources:
+- https://docs.powerhq.co/playground.md
+- https://docs.powerhq.co/playground-access.md
+description: PowerHQ public sandbox
+modes:
+- name: public sandbox
+  base_url: https://powerhq-playground-api.powerhq.workers.dev/
+  how_to_get_access: No API key required; free public sandbox is open to any IP with a limit of 10 free calls per IP.
+docs:
+- https://docs.powerhq.co/playground.md
+- https://docs.powerhq.co/playground-access.md

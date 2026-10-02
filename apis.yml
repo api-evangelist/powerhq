@@ -1,29 +1,83 @@
 aid: powerhq
 name: PowerHQ
-description: 'PowerHQ is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
-  and added to the network as a stub for full-pipeline profiling.'
+description: PowerHQ provides infrastructure for retail electricity commerce, offering a marketplace, drop‑in storefront, and a standardized API
+  that gives access to plan data, real‑time pricing, validation, and enrollment across deregulated markets. It serves energy providers, developers,
+  partners, and brokers who want to list plans, integrate enrollment, or add energy shopping experiences to their sites with minimal IT effort.
 url: https://raw.githubusercontent.com/api-evangelist/powerhq/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-02 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-02'
 modified: '2026-10-02'
 tags:
-- Company
-apis: []
+- Energy Commerce
+- Retail Electricity
+- Marketplace
+- API
+- Energy Providers
+- Developers
+- Partners
+- Brokers
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: AgenticAccess
+  url: agentic-access/powerhq-agentic-access.yml
+- type: Spectral
+  url: rules/powerhq-rules.yml
+- type: Sandbox
+  url: sandbox/powerhq-sandbox.yml
+- type: Authentication
+  url: authentication/powerhq-authentication.yml
+- type: ErrorCatalog
+  url: errors/powerhq-problem-types.yml
+- type: Conformance
+  url: conformance/powerhq-conformance.yml
+- type: LLMsTxt
+  url: llms/powerhq-llms.txt
+- type: AgentCard
+  url: a2a/powerhq-a2a.yml
+- type: WellKnown
+  url: well-known/powerhq-well-known.yml
+- type: Hosts
+  url: hosts/powerhq-hosts.yml
+- type: Vendors
+  url: vendors/powerhq-vendors.yml
+- type: TermsOfService
+  url: https://www.powerhq.co/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.powerhq.co/privacy-policy
+- type: Pricing
+  url: https://docs.powerhq.co/concepts/pricing
+- type: APIReference
+  url: https://docs.powerhq.co/reference/types
+- type: GettingStarted
+  url: https://docs.powerhq.co/quickstart
+- type: DomainSecurity
+  url: security/powerhq-domain-security.yml
 - type: Website
   url: https://www.powerhq.co
 - type: Documentation
   url: https://docs.powerhq.co
+apis:
+- name: PowerHQ Plan Data API
+  description: GraphQL API providing retail electricity plan data and enrollment URLs.
+  humanURL: https://docs.powerhq.co
+  baseURL: https://powerhq-playground-api.powerhq.workers.dev
+  type: GraphQL
+  aid: powerhq:powerhq-plan-data-api
 x-submission-notes: GraphQL API for U.S. retail energy commerce (plans, enrollment).
-x-submission-probe: root 200; docs 200; llms.txt 200 (both); type reference 200; playground GraphQL POST
-  introspection 200 (queryType Query); 404 probe 404
+x-submission-probe: root 200; docs 200; llms.txt 200 (both); type reference 200; playground GraphQL POST introspection 200 (queryType Query);
+  404 probe 404
 x-submitted-by: thad.warren@powerhq.co (apis.io/add, 2026-09-30)
+x-enrichment:
+  date: '2026-10-02'
+  status: enriched
+  artifacts_added: 23
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
