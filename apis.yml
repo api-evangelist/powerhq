@@ -15,11 +15,17 @@ tags:
 - Energy Commerce
 - Retail Electricity
 - Marketplace
+- Energy Providers
+- Developers
+- Partners
+tags_raw:
+- Energy Commerce
+- Retail Electricity
+- Marketplace
 - API
 - Energy Providers
 - Developers
 - Partners
-- Brokers
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -81,3 +87,5 @@ x-enrichment:
   artifacts_added: 23
   pass: modular-v1
   engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
+x-tags-removed:
+- Brokers
